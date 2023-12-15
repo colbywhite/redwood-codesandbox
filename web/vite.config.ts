@@ -11,6 +11,9 @@ import redwood from '@redwoodjs/vite'
 
 const viteConfig: UserConfig = {
   plugins: [redwood()],
+  server: {
+    open: false,
+  },
 }
 
 export default defineConfig(viteConfig)
